@@ -31,3 +31,24 @@ function returnSecondValue(getarray){
 
 }
 console.log(returnSecondValue(array));
+
+
+//+++++++++++++Important concept++++++++++++++++++++++++
+
+console.log(addone(5));
+
+function addone(num){
+    return num+1;
+}
+
+//Other way
+
+console.log(addtwo(5));
+
+const addtwo= function(num){    //In this way before intialization you cant call a function above of initialization in the code.
+    return num+2
+}
+//How Function Hoisting Works:
+//In JavaScript, function declarations are hoisted to the top of their scope. This means that the JavaScript engine moves the entire function definition (not just the name) to the top of the scope during the compile phase. As a result, you can call the function before its actual declaration in the code.
+
+
