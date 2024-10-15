@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM,Chai aur code</title>
+    
+</head>
+<body style="background-color: black; color: white;">
+    
+</body>
+<script>
+    const div=document.createElement('div')
+    console.log(div)
+    div.className="main"
+    div.id=Math.round(Math.random()*10+1);
+    console.log(div)
+
+
+    div.setAttribute("title","generated title")//any attribute you want to add in div
+
+    div.style.backgroundColor="red"
+    div.style.padding="12px"
+
+    div.innerHTML="Chai aur code"
+
+
+    //attaching of this element on the page
+    document.body.appendChild(div)
+
+
+
+
+
+
+    // const h1=document.createElement('h1')
+    // console.log(h1)
+</script>
+</html>
