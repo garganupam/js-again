@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body style="background-color: black;color:white
+">
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+
+
+    <script>
+        // setTimeout(() => {
+        //     console.log("Anupam")
+            
+        // }, 2000);
+
+       
+
+
+        const myName=function(){
+            console.log("Anupam")
+        }
+        // document.querySelector('h1').innerHTML='JS Series'
+
+        const changeText=function(){
+            document.querySelector('h1').innerHTML="Best Js series";
+        }
+        setTimeout(myName,3000); //only function reference is passed here not function
+        changeMe=setTimeout(changeText,3000);
+
+
+        /*In JavaScript, the clearTimeout() function is used to cancel a previously set timeout that was initiated by the setTimeout() function. If you have scheduled a function or code block to execute after a certain amount of time using setTimeout(), you can use clearTimeout() to prevent that function from running.*/
+
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(changeMe);
+            console.log("myName function is stopped")
+        })
+        
+    </script>
+
+
+    
+</body>
+</html>
