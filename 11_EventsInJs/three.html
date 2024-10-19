@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignemnt</title>
+    
+</head>
+<body style="background-color: black;color: white;">
+    <h1>Hey whatsup</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+    //     const sayDate=function(str){
+    //         console.log(str)
+    //         console.log(Date.now())
+    //     }
+    //     // setInterval(sayDate,1000,"h1")
+    //     const intervalId=setInterval(sayDate,1000,"h1")
+
+    //     clearInterval(intervalId)
+
+    //My TASK
+    let intervalID;
+
+    const print=function(){
+        console.log("Anupam is the best");
+    };
+    document.querySelector("#start").addEventListener('click',function(){
+         intervalID=setInterval(print,1000);
+    })
+    // const setId=setInterval(print,2000);
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearInterval(intervalID);
+    })
+     </script>
+    
+</body>
+</html>
