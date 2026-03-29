@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning events</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="Stop">Stop</button>
+
+    <script>
+     const func=function(){
+        console.log("Anupam")
+     }
+
+     changesMe=setTimeout(func,2000);
+
+    const changeText=function(){
+         document.querySelector('h1').innerHTML="Best JS learning"
+    }
+    const changeMe=setTimeout(changeText,2000)
+    
+
+    document.querySelector('#Stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        clearTimeout(changesMe)
+        console.log('Stopped')
+    })
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning events</title>
+</head>
+<body>
+    <h1>Chai aur JS</h1>
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+
+    <script>
+    const change= setInterval(function(){
+        console.log("Anupam",Date.now())
+     },2000)
+     
+document.querySelector('#Stop').addEventListener('click',function(){
+     clearInterval(change,2000)
+     console.log("Stopped")
+     }) 
+
+document.querySelector('#Start').addEventListener('click',function(){
+    setInterval(function(){
+        console.log('Anupam Garg',Date.now())
+    },1000)    
+})
+
+     
+    
+    </script>
+</body>
+</html>
